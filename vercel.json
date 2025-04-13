@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "cd city-relocation-advisor && npm install --include=dev && npm run build",
+  "buildCommand": "npm install && npm run build",
   "outputDirectory": "city-relocation-advisor/.next",
-  "devCommand": "cd city-relocation-advisor && npm run dev",
+  "devCommand": "npm run dev",
   "framework": "nextjs",
-  "installCommand": "cd city-relocation-advisor && npm install --include=dev"
+  "installCommand": "npm install"
 } 

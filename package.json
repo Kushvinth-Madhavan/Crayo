@@ -1,4 +1,14 @@
 {
+  "name": "crayo-project",
+  "private": true,
+  "workspaces": [
+    "city-relocation-advisor"
+  ],
+  "scripts": {
+    "dev": "cd city-relocation-advisor && npm run dev",
+    "build": "cd city-relocation-advisor && npm run build",
+    "start": "cd city-relocation-advisor && npm run start"
+  },
   "dependencies": {
     "@auth/core": "^0.34.2",
     "@auth/nextjs": "^0.0.0-380f8d56",
