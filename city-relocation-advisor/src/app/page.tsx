@@ -1,6 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
+// Add static rendering hint
+export const dynamic = 'force-static';
+export const revalidate = 3600; // Revalidate every hour
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
@@ -23,12 +27,14 @@ export default function Home() {
             <Link 
               href="/chat" 
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-block transition-colors"
+              prefetch={false}
             >
               Start Chatting
             </Link>
             <Link 
               href="/chat?test=true" 
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg inline-block transition-colors"
+              prefetch={false}
             >
               Run Demo Test
             </Link>

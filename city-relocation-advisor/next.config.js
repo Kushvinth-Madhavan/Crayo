@@ -17,12 +17,23 @@ const nextConfig = {
   publicRuntimeConfig: {
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL
   },
-  // Add trailing slashes to ensure consistent routing
-  trailingSlash: true,
-  // Enable strict mode for better development experience
-  reactStrictMode: true,
+  // Output configuration for better static/dynamic rendering
+  output: 'standalone',
+  // Image optimization
+  images: {
+    domains: ['lrecltvoyamotnlxomhh.supabase.co'],
+    unoptimized: false
+  },
+  // Enable static optimization where possible
+  swcMinify: true,
   // Configure powered by header
-  poweredByHeader: false
+  poweredByHeader: false,
+  // Optimize production builds
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production'
+  },
+  // Enable React strict mode
+  reactStrictMode: true
 };
 
 module.exports = nextConfig; 
