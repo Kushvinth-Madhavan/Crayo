@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "next build",
-  "devCommand": "next dev",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "outputDirectory": ".next",
   "framework": "nextjs",
+  "regions": ["iad1"],
   "functions": {
     "src/app/api/**/*.ts": {
       "memory": 1024,
@@ -21,10 +24,18 @@
     }
   ],
   "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@next_public_supabase_url",
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase_service_role_key",
     "GROQ_API_KEY": "@groq_api_key",
     "RADAR_API_KEY": "@radar_api_key",
     "SERPER_API_KEY": "@serper_api_key",
     "NEWS_API_KEY": "@news_api_key",
-    "JINA_API_KEY": "@jina_api_key"
+    "JINA_API_KEY": "@jina_api_key",
+    "RATE_LIMIT_REQUESTS_PER_MINUTE": "30",
+    "RATE_LIMIT_REQUESTS_PER_HOUR": "300",
+    "RATE_LIMIT_REQUESTS_PER_DAY": "3000",
+    "CACHE_DURATION_HOURS": "24",
+    "MAX_CACHE_ITEMS": "1000",
+    "DATABASE_URL": "@database_url"
   }
 } 
