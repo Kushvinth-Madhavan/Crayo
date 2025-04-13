@@ -1,102 +1,154 @@
+# 🏙️ CityMate - AI City Relocation Advisor
 
-City Relocation Advisor Chatbot
-Instructions
-Core Requirements
-AI Agent Functionality
-•Build an AI agent that solves the assigned use case problem
-•Implement persistent memory across different chat sessions using Vector DB
-•Integrate real-time data retrieval through relevant APIs based on your use case
-•Ensure the agent can recall previous interactions and use them for context in new conversations
-•Implement at least 2 use-case specific tools and memory-related tools
+<div align="center">
 
-Technical Requirements
-Your agent must demonstrate both:
-•Long-term memory: Store and retrieve important information from previous conversations that persists across sessions, even after clearing chat history.
-•Real-time knowledge: Access current data through APIs relevant to your use case.
+![CityMate Demo](https://raw.githubusercontent.com/yourusername/city-relocation-advisor/main/public/demo.gif)
 
-Technology Options
-LLM Providers (choose one)
-•Gemini (Recommended)
-•Groq
+[![Next.js](https://img.shields.io/badge/Next.js-14.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Groq](https://img.shields.io/badge/Groq-AI-orange?style=for-the-badge)](https://groq.com/)
 
-Embeddings Providers
-•Gemini Embeddings(Recommended)
-•Jina Embeddings
+</div>
 
-Vector Database (choose one)
-•Pinecone (Recommended)
-•Supabase (pgvector) (Recommended)
-•Neon (pgvector)
-•Neo4J (vector index)
+## ✨ Features
 
-Development Stack
-Python Option
-•Agno (Recommended)
-•LangChain
-•CrewAI
-•LlamaIndex
+<div align="center">
+<img src="https://raw.githubusercontent.com/yourusername/city-relocation-advisor/main/public/features.gif" width="600px" />
+</div>
 
-JavaScript Option
-•Vercel AI SDK (Recommended)
-•Mastra.ai (Recommended)
-•LangChain
-•LlamaIndex
+- 🤖 **AI-Powered Analysis** - Advanced city comparison using Groq AI
+- 🌐 **Real-Time Data** - Live information from multiple reliable sources
+- 📊 **Comprehensive Insights** - Detailed analysis of:
+  - Cost of living comparisons
+  - Housing market trends
+  - Job opportunities
+  - Quality of life metrics
+  - Neighborhood recommendations
+- 🎯 **Personalized Recommendations** - Tailored advice based on your preferences
+- 🔄 **Parallel API Processing** - Fast, concurrent data gathering
+- 📱 **Modern UI/UX** - Beautiful, responsive design with smooth animations
 
-UI (Optional but Highly Preferred)
-•Next.js (Recommended)
-•React.js
-•Any CSS libraries of your choice
+## 🚀 Quick Start
 
-Deployment (Optional)
-•Vercel (Recommended)
-•Netlify
-•Render
+\`\`\`bash
+# Clone the repository
+git clone https://github.com/yourusername/city-relocation-advisor.git
 
-Implementation Options
-Option 1: With UI (Highly Preferred)
-•Develop a clean, professional user interface
-•Integrate your AI agent API with the frontend
-•Deploy the application (optional but recommended)
+# Install dependencies
+cd city-relocation-advisor
+npm install
 
-Option 2: Without UI
-•Demonstrate functionality through CLI or API testing tools (e.g., Postman)
-•Provide clear documentation on how to test and use your agent
+# Set up environment variables
+cp .env.example .env.local
 
-Development Approach
-We recommend:
-•First focus on completing the core AI agent functionality
-•Then implement the UI and integration
-•Finally deploy the application if possible
+# Start the development server
+npm run dev
+\`\`\`
 
-Timeline
-•Final Submission Deadline is April 13, 2025
-•Plan your time accordingly to ensure all core requirements are met and focus on completing core functionality first before adding additional features
+## 🔑 Environment Variables
 
-Evaluation Criteria
-•Functionality of the AI agent
-•Quality of memory implementation
-•Effective use of real-time data
-•Code quality and organization
-•UI implementation
-•Deployment (optional but valued)
+Create a \`.env.local\` file with the following:
 
-Note: You will receive another email with a link to submit your work. High preference will be given to candidates who implement AI agent functionality with UI.
+\`\`\`env
+GROQ_API_KEY=your_groq_api_key
+SERPER_API_KEY=your_serper_api_key
+NEWS_API_KEY=your_news_api_key
+JINA_API_KEY=your_jina_api_key
+RADAR_API_KEY=your_radar_api_key
+\`\`\`
 
-Problem Statement
-People considering relocation to a new city often struggle to evaluate locations based on their personal preferences and needs. Without guidance that remembers their specific priorities and constraints, they waste time researching the same factors repeatedly or miss important considerations.
-Your task is to build an AI chatbot agent that helps users evaluate potential cities for relocation. The agent should provide information on cost of living, housing markets, job opportunities, quality of life factors, and neighborhood characteristics.
-When users clear the chat and start a new conversation, the agent should recall important information from previous interactions such as career field, lifestyle preferences, family needs, budget constraints, and previously discussed locations. This stored information should be combined with real-time city data to provide personalized recommendations that reflect current housing markets, employment trends, and quality of life metrics, even after the chat has been cleared.
+## 🛠️ Tech Stack
 
-Example user queries:
-•What are the latest housing market trends in the neighborhoods we discussed in Austin?
-•How do recent reports rate the school districts in Denver compared to the education priorities we talked about?
-•Based on my remote work situation, what are current experts saying about the most affordable tech hubs?
-•What recent changes in public transportation would affect my commute in the cities we've discussed?
-•How do current cost of living comparisons look between the top three cities that matched my preferences?
+<div align="center">
 
-You could use APIs like:
-•OpenStreetMap API
-•Serper API
-•Jina Reader API
-•News API
-Note : You can use any other relevant APIs for your use case, other than the above list.
+### Frontend
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+### Backend & AI
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-FF6B6B?style=for-the-badge)
+
+### APIs
+- 🗺️ Radar Location API
+- 🔍 Serper (Google Search)
+- 📰 News API
+- 📚 Jina AI Reader
+
+</div>
+
+## 🎯 Key Features Demo
+
+### 1. Smart City Analysis
+<div align="center">
+<img src="https://raw.githubusercontent.com/yourusername/city-relocation-advisor/main/public/analysis.gif" width="600px" />
+</div>
+
+### 2. Real-Time Data Integration
+<div align="center">
+<img src="https://raw.githubusercontent.com/yourusername/city-relocation-advisor/main/public/realtime.gif" width="600px" />
+</div>
+
+### 3. Beautiful Loading Animations
+<div align="center">
+<img src="https://raw.githubusercontent.com/yourusername/city-relocation-advisor/main/public/loading.gif" width="600px" />
+</div>
+
+## 📊 API Usage Report
+
+Our system intelligently combines data from multiple sources:
+
+```typescript
+const apiCalls = [
+  getLocationData(),        // Radar API
+  getWebSearchResults(),    // Serper API
+  getCityNews(),           // News API
+  getContentSummaries()    // Jina AI
+];
+```
+
+Each response includes a detailed API usage report:
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/yourusername/city-relocation-advisor/main/public/api-report.png" width="400px" />
+</div>
+
+## 🌟 Unique Features
+
+1. **Parallel API Processing**
+   - Concurrent data gathering from multiple sources
+   - Optimized response times
+   - Fallback mechanisms for reliability
+
+2. **Smart Data Sources**
+   - 13+ reliable city information sources
+   - Real-time data updates
+   - Comprehensive coverage of all aspects
+
+3. **Beautiful UI/UX**
+   - Smooth loading animations
+   - Responsive design
+   - Intuitive interface
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 🙏 Acknowledgments
+
+- [Groq AI](https://groq.com/) for their amazing LLM
+- [Vercel](https://vercel.com/) for hosting
+- All the API providers that make this possible
+
+---
+
+<div align="center">
+Made with ❤️ by Kushvinth
+</div>
