@@ -9,11 +9,6 @@ const nextConfig = {
     NEWS_API_KEY: process.env.NEWS_API_KEY,
     JINA_API_KEY: process.env.JINA_API_KEY
   },
-  // Enable experimental features for App Router
-  experimental: {
-    serverActions: true,
-    appDir: true
-  },
   // Prevent server-only env variables from being exposed to the client
   serverRuntimeConfig: {
     SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY
